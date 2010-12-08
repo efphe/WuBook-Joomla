@@ -1,0 +1,14 @@
+WuBook plugin for Joomla
+
+This plugin allows to implement the wubook online
+booking system inside joomla sites. Connected with
+the channel manager WooDoo. More info at:
+
+ http://en.wubook.net/
+ http://wubook.net/
+
+INSTALL:
+
+  Just upload (on Joomla module Section of your 
+  Joomla admin area), the package inside the 
+  `install` directory.
