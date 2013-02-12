@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/module-install.dtd">
+<extension type="module" version="1.6.0" client="site" method="upgrade">
+    <name>WuBook Widget</name>
+    <author>Eugenio Palumbo</author>
+    <creationDate>Jan 21, 2013</creationDate>
+    <copyright>2013 © WuBook s.r.l.</copyright>
+    <license>BSD</license>
+    <authorEmail>steel@wubook.net</authorEmail>
+    <authorUrl>http://en.wubook.net/</authorUrl>
+    <version>0.2b</version>
+    <description>This plugin allows you to insert an online reception into your website</description>
+    <files>
+      <filename module="mod_wumla">mod_wumla.php</filename>
+    </files>
+    <config>
+      <fields name="params">
+      <fieldset name="basic">
+		  <field name="lcode" type="text" default="123" label="lcode" description="It is the structure's identification code. You can retrieve it the Extranet of WuBook." />
+		  <field name="@spacer" type="spacer" default="" label="" description="" />
+		  <field name="p_avoiddates" type="list" default="0" label="avoiddates" description="If it's set to True, the choice of the date is not possible.">
+			  <option value="0">False</option>
+			  <option value="1">True</option>
+		  </field>
+		  <field name="p_avoidcanc" type="list" default="0" label="avoidcanc" description=" If it's set to True, the engine will not implement the cancellations.">
+			  <option value="0">False</option>
+			  <option value="1">True</option>
+		  </field>
+		  <field name="p_avoidmail" type="list" default="0" label="avoidmail" description="If it's set to True, the online reception will not be implemented.">
+			  <option value="0">False</option>
+			  <option value="1">True</option>
+		  </field>
+
+		  <field name="p_deflang" type="list" default="en" label="deflang" description="It sets the default language, if the wbloader cannot find the customer language the deflang value will be used.">
+			  <option value="en">en</option>
+			  <option value="it">it</option>
+			  <option value="de">de</option>
+			  <option value="fr">fr</option>
+			  <option value="es">es</option>
+			  <option value="pt">pt</option>
+			  <option value="ru">ru</option>
+			  <option value="nl">nl</option>
+		  </field>
+
+		  <field name="p_theme" type="list" default="wungle" label="theme" description="You can customize the online reception theme.">
+			  <option value="wugle">wugle </option>
+			  <option value="46">46 </option>
+			  <option value="wubook">wubook </option>
+			  <option value="zak">zak </option>
+			  <option value="wcdonald">wcdonald </option>
+			  <option value="serious">serious </option>
+		  </field>
+		  <field name="p_css" type="list" default="0" label="css" description="You can customize the widget style.">
+			  <option value="0">False</option>
+		  </field>
+		  <field name="p_horizonatal" type="list" default="0" label="horizonatal" description="If it's set to True, the widget will be populated horizontally.">
+			  <option value="0">False</option>
+			  <option value="1">True</option>
+		  </field>
+
+      </fieldset>
+      </fields>
+    </config>
+  </extension>
