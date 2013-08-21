@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="1.6">
+    <name>WuBook_Reception_Package</name>
+    <packagename>wubook</packagename>
+    <description>Plugin Creato da Eugenio Palumbo ( steel@wubook.net ) per WuBook s.r.l.</description>
+    <version>1.0.0</version>
+    <creationDate>Agosto 2013</creationDate>
+    <author>Eugenio Palumbo</author>
+    <authorEmail>steel@wubook.net</authorEmail>
+    <authorUrl>http://www.itasolution.it</authorUrl>
+    <copyright>Copyright 2013 WuBook s.r.l. - All rights reserved.</copyright>
+    <url>http://en.wubook.net/</url>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+
+    <files>
+	<file type="component" id="mod_wumla">mod_wumla.zip</file>
+	<file type="plugin" id="plg_wumla" group="content">plg_wumla.zip</file>
+    </files>
+
+</extension>
